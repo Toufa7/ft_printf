@@ -66,3 +66,7 @@ int	ft_printf(const char *str, ...)
 	va_end(arg);
 	return (count);
 }
+/*
+#define officiel(a); printf("%d\n", ft_printf("%d | ", a));
+#define mine(a); printf("%d\n", printf("%d | ", a));
+*/
