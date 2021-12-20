@@ -53,6 +53,8 @@ int	ft_printf(const char *str, ...)
 	{
 		if (str[i] == '%')
 		{
+			if(!str[i + 1])
+				break;
 			count += what_comes_next(str[i + 1], arg);
 			i++;
 		}
